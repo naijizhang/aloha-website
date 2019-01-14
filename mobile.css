@@ -1,0 +1,465 @@
+/* Mobile */
+@media all {
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+
+
+
+
+
+    body{
+        font-family: 'Raleway';
+        font-weight: 300;
+        font-style: normal;
+        font-size: 16px;
+        color: #2d2d2d;
+    }
+    .container{
+        /* max-width: 1240px;
+        min-width: 500px; */
+        /* max-width: 500px; */
+        min-width: 800px;
+    }
+    p{
+        color:black;
+        font-size: 30px;
+    }
+
+    .site-header{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .logo{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-items: flex-start;
+    }
+    .logo img{
+        width: 50%;
+        padding: 5%;
+    } 
+    .cart{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .cart img{
+        width: 25%;  
+        padding: 5%;
+    }
+    .main-navigation{
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        margin: auto 2%;
+        padding: 3%;
+        border-top: solid;
+        border-top-color: #9696963d;
+        border-width: 2px;
+        text-transform: uppercase;
+    }
+    nav a{
+        text-decoration: none;
+        color: #e2574c;
+        font-weight: 500
+    }
+    nav a:hover{
+        /* text-decoration: underline; */
+        color: #b64036;
+    }
+    .banner p{
+        color: #ffffff;
+        font-size: 40px;
+        font-weight: 500;
+        margin: 4%
+    }
+    .banner-text{
+        width: 80%;
+        text-align: center;
+    }
+
+    .banner{
+        text-align: center;
+        color: #ffffff;
+        font-size: 20px;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) ,url("images/banner-girl.png"),url("images/flower-bkgd.jpg"); 
+        background-size: cover,contain,cover;
+        background-repeat:no-repeat,no-repeat, repeat-x;
+        background-position-x: center,center,center;
+        background-position-y: center,6em,center;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .banner-text h1{
+        font-size:80px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1,h2{
+        font-family: 'Playfair Display';
+        font-weight: normal;
+        font-style: normal;
+    }
+    .about{
+        padding: 15px;
+    }
+    .about,.newsletter{
+        text-align: center;
+        margin: 40px auto;
+    }
+    .about p,.newsletter p{
+        margin: auto 5%;
+        line-height: 50px;
+    }
+    h2{
+        margin: 50px auto;
+        font-size: 60px;
+    }
+    em{
+        font-family: 'Playfair Display';
+        font-weight: normal;
+        font-style: italic;
+    }
+    strong{
+        font-family: 'Playfair Display';
+        font-weight: bold;
+        font-style: normal;
+    }
+    .newsletter{
+        text-align: center;
+    }
+    footer{
+        background: #242424;
+        color: #ffffff;
+        height: 500px;
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        align-items: center;
+    }
+    .footer-child{
+        margin: 40px;
+    }
+    footer p{
+        color: #ffffff;
+        margin: 0px;
+    }
+    footer i{
+        width: 30px;
+    }
+    footer ul{
+        list-style-type: none;
+    }
+    footer li{
+        margin: 5px auto;
+    }
+    .light-grey{
+        color:rgb(132,132,132);
+    }
+    footer p{
+        font-family: 'Playfair Display';
+        font-weight: normal;
+        font-style: normal;
+    }
+    footer a{
+        color: #ffffff;
+    }
+    .footer-child span{
+        display: none;    
+    }
+    .socialmedia{
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+/* Tablet... */
+@media all and (min-width: 600px) {
+ 
+  }
+/* Desktop... */
+@media all and (min-width: 1200px) {
+    body{
+        font-family: 'Raleway';
+        font-weight: 300;
+        font-style: normal;
+        font-size: 16px;
+        color: #2d2d2d;
+    }
+    p{
+        color:black;
+        font-size: 15px;
+    }
+    
+    .logo{
+        order: 0;
+        width: 100px;
+        flex: 0 1 30%;
+    }
+    .logo img{
+        width: 100px;
+        margin-left: 20px;
+        
+    } 
+    .main-navigation{
+        order: 1;
+        flex: 0 1 40%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+    .cart{
+        order:2;
+        flex: 0 1 30%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .cart img{
+       height: 40px;
+        width: 40px;
+        margin-right: 20px;
+        
+    }
+    
+    header{
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: #e2574c;
+    }
+    nav a:hover{
+        text-decoration: underline;
+        color: #b64036;
+    }
+    
+    .banner p{
+        color: #ffffff;
+        font-size: 15px;
+    }
+    .banner-text h1{
+        margin: 15px;
+    }
+    .banner{
+        text-align: center;
+        color: #ffffff;
+        font-size: 20px;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) ,url("images/banner-girl.png"),url("images/flower-bkgd.jpg"); 
+        background-size: cover,contain,contain;
+        background-repeat:no-repeat,no-repeat, repeat-x;
+        background-position-x: center,center,center;
+        background-position-y: center,50px,center;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .banner-text h1{
+        font-size: 40px;
+    }
+    h1,h2{
+        font-family: 'Playfair Display';
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    .about,.newsletter{
+        text-align: center;
+        margin: 50px auto;
+    }
+    .about p,.newsletter p{
+        margin: auto 20%;
+        line-height: 30px;
+    }
+    h2{
+        margin: 10px auto;
+        font-size: 30px;
+    }
+    em{
+        font-family: 'Playfair Display';
+        font-weight: normal;
+        font-style: italic;
+    }
+    strong{
+        font-family: 'Playfair Display';
+        font-weight: bold;
+        font-style: normal;
+    }
+    
+    .category {
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .item{
+        color: #ffffff;
+        font-weight: 500;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    #mens,#womens {
+        flex: 0 1 50%;
+    }
+    #trends,#glasses,#sale,#bags{
+        flex: 0 1 25%;
+    }
+    #mens{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/mens-category.jpg);
+        background-size: cover,cover;
+        background-repeat:no-repeat, no-repeat;
+        background-position-x: center, center;
+        background-position-y:center, center;
+    }
+    #trends{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/trends-category.jpg);
+        background-size: cover,cover;
+        background-repeat:no-repeat, no-repeat;
+        background-position-x: center, center;
+        background-position-y:center, center;
+      
+    }
+    #glasses{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/glasses-category.jpg);
+        background-size: cover,cover;
+        background-repeat:no-repeat, no-repeat;
+        background-position-x: center, center;
+        background-position-y:center, center;
+    }
+    #sale{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/sale-category.jpg);
+        background-size: cover,cover;
+        background-repeat:no-repeat, no-repeat;
+        background-position-x: center, center;
+        background-position-y:center, center;
+    }
+    #bags{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bags-category.jpg);
+        background-size: cover,cover;
+        background-repeat:no-repeat, no-repeat;
+        background-position-x: center, center;
+        background-position-y:center, center;
+        
+    }
+    #womens{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/womens-category.jpg);
+        background-size: cover,cover;
+        background-repeat:no-repeat, no-repeat;
+        background-position-x: center, center;
+        background-position-y:center, center;
+    }
+    
+    .newsletter{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/wave-bkgd.jpg);
+        background-size: cover,cover;
+        background-repeat:no-repeat, no-repeat;
+        background-position-x: center, center;
+        background-position-y:center, center;
+    }
+    
+    .container{
+        /* max-width: 1240px;
+        min-width: 500px; */
+        /* max-width: 500px; */
+    
+    }
+    footer{
+        background: #242424;
+        color: #ffffff;
+        height: 200px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-child{
+        margin: 40px;
+    }
+    footer p{
+        color: #ffffff;
+        margin: 0px;
+    }
+    footer i{
+        width: 30px;
+    }
+    footer ul{
+        list-style-type: none;
+    }
+    footer li{
+        margin: 5px auto;
+    }
+    .light-grey{
+        color:rgb(132,132,132);
+    }
+    footer p{
+        font-family: 'Playfair Display';
+        font-weight: normal;
+        font-style: normal;
+    }
+    footer a{
+        color: #ffffff;
+    }
+}
