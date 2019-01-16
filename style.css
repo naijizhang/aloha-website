@@ -327,6 +327,9 @@
 
 }
 
+
+
+
 /* Tablet... */
 @media all and (min-width: 600px) {
     body{
@@ -436,20 +439,15 @@
         margin: 0.8em auto;
     }
   }
+
+
+
 /* Desktop... */
-@media all and (min-width: 1200px) {
-    body{
-        font-size: 16px;
-    }
-    p{
-        font-size: 16px;
-    }
+@media all and (min-width: 1000px) {
     .site-header{
-        flex-flow: row nowrap;
         height: 15%;
     }
     .logo{
-        order: 0;
         width: 30%;
         margin-left: 4%;
     }
@@ -458,12 +456,9 @@
         padding: 0;
     } 
     .main-navigation{
-        order: 1;
         width: 40%;
-        border-top: none;
     }
     .cart{
-        order:2;
         width: 30%;
     }
     .cart img{
@@ -474,20 +469,11 @@
         font-size: 18px;
     }
     .banner-text h1{
-        margin: 15px;
         font-size: 60px;
-        display: inline;
     }
     .banner{
         height: 30rem;
     }
-    
-    h1,h2{
-        font-family: 'Playfair Display';
-        font-weight: normal;
-        font-style: normal;
-    }
-    
     .about,.newsletter{
         text-align: center;
         display: flex;
@@ -498,49 +484,8 @@
     }
     .about p,.newsletter p{
         margin: 1rem 20%;
-        line-height: 30px;
-    }
-    h2{
-        margin: 10px auto;
-        font-size: 30px;
-    }
-    .item{
-        height: 10rem;
-    }
-    .category-block1, .category-block2 {
-        display: flex;
-        flex-flow: row nowrap;
-        width: 100%;
-    }
-    .category-trends-glasses,.category-sale-bags{
-        width: 50%;
-    }
-    .category-mens,.category-womens{
-        width: 50%;
-    }
-    .container{
-        max-width: 1240px;
-        margin: 0 auto;
-    }
-    footer{
-        height: 16rem;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .footer-child span{
-        display: inline;
     }
     .footer-child{
-        display: initial;
-        text-align: left;
         margin: auto 50px;
-    }
-    .footer-child p{
-    line-height: 1.5em;
-    }
-    .footer-child li{
-        margin: 0.8em auto;
     }
 }
