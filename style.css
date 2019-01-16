@@ -63,11 +63,12 @@
     }
     .container{
         max-width: 1240px;
-        min-width: 500px;
+        min-width: 400px;
+        margin: 0 auto;
     }
     p, section{
         color:black;
-        font-size: 30px;
+        font-size: 14px;
     }
 
     .site-header{
@@ -75,20 +76,21 @@
         flex-flow: row wrap;
     }
     .logo{
-        width: 50%;
+       
         display: flex;
         align-items: center;
         justify-items: flex-start;
+        flex: 1 2 50%;
     }
     .logo img{
         width: 50%;
         padding: 5%;
     } 
     .cart{
-        width: 50%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        flex: 1 2 50%;
     }
     .cart img{
         width: 25%;  
@@ -117,7 +119,7 @@
     }
     .banner p{
         color: #ffffff;
-        font-size: 40px;
+        font-size: 14px;
         font-weight: 500;
         margin: 4%;
     }
@@ -135,14 +137,14 @@
         background-repeat:no-repeat,no-repeat, repeat-x;
         background-position-x: center,center,center;
         background-position-y: center,6em,center;
-        height: 600px;
+        height: 400px;
         display: flex;
         justify-content: center;
         align-items: center;
         
     }
     .banner-text h1{
-        font-size:80px;
+        font-size:40px;
         display: flex;
         flex-direction: column;
     }
@@ -153,19 +155,19 @@
         font-style: normal;
     }
     .about{
-        padding: 15px;
+       padding: 20px;
     }
     .about,.newsletter{
         text-align: center;
-        margin: 40px auto;
+        margin: 20px auto;
     }
     .about p,.newsletter p{
         margin: auto 5%;
-        line-height: 50px;
+        line-height: 30px;
     }
     h2{
-        margin: 50px auto;
-        font-size: 60px;
+        margin: 20px auto;
+        font-size: 30px;
     }
     em{
         font-family: 'Playfair Display';
@@ -180,7 +182,7 @@
     .item{
         color: #ffffff;
         font-weight: 500;
-        height: 20rem;
+        height: 12rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -194,14 +196,14 @@
         display: flex;
         flex-flow: row nowrap;
         width: 100%;
-        margin: 5px;
+        margin: 3px;
     }
     .category-mens,.category-womens{
         width: 100%;
-        margin: 5px;
+        margin: 3px;
     }
     .category-trends,.category-sale{
-        margin-right: 10px;
+        margin-right: 6px;
     }
     
     .category-trends,.category-glasses,.category-sale,.category-bags{
@@ -239,7 +241,7 @@
         background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/wave-bkgd.jpg);
         background-size: cover,100% 100%;
         background-repeat:no-repeat, no-repeat;
-        height: 500px;
+        height: 300px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -280,7 +282,7 @@
     footer{
         background: #242424;
         color: #ffffff;
-        height: 500px;
+        height: 300px;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -288,7 +290,7 @@
         text-align: center;
     }
     .footer-child{
-       
+       line-height: 20px;
     }
     footer p{
         color: #ffffff;
@@ -320,13 +322,119 @@
     .socialmedia{
         display: flex;
         flex-direction: row;
+        margin-top: 30px;
     }
 
 }
 
 /* Tablet... */
 @media all and (min-width: 600px) {
- 
+    body{
+        font-size: 16px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .site-header{
+        flex-flow: row nowrap;
+        height: 80px;
+    }
+    .logo{
+        order: 0;
+        width: 10%;
+    }
+    .logo img{
+        width: 80%;
+        margin-left: 3%;
+    }
+    .main-navigation{
+        order: 1;
+        width: 80%;
+        border-top: none;
+        justify-content:space-around;
+    }
+    .cart{
+        order:2;
+        width: 10%;
+    }
+    .cart img{
+        width: 40%;
+        margin-right: 4%;
+    }
+    .banner p{
+        font-size: 20px;
+    }
+    .banner-text h1{
+        margin: 15px;
+        font-size: 40px;
+        display: inline;
+    }
+    .banner{
+        height: 400px;
+        background-position-y: center,2rem,center;
+    }
+    
+    h1,h2{
+        font-family: 'Playfair Display';
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    .about{
+        text-align: center;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 15rem;
+    }
+    .newsletter{
+        height: 20rem;
+    }
+    .about p,.newsletter p{
+        margin: 1rem 8%;
+        line-height: 30px;
+    }
+    h2{
+        margin: 10px auto;
+        font-size: 30px;
+    }
+    .item{
+        height: 10rem;
+        font-size: 25px;
+    }
+    .category-block1, .category-block2 {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 100%;
+    }
+    .category-trends-glasses,.category-sale-bags{
+        width: 50%;
+    }
+    .category-mens,.category-womens{
+        width: 50%;
+    }
+    footer{
+        height: 16rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-child span{
+        display: inline;
+    }
+    .footer-child{
+        display: initial;
+        text-align: left;
+        margin: auto 20px;
+    }
+    .footer-child p{
+    line-height: 1.5em;
+    }
+    .footer-child li{
+        margin: 0.8em auto;
+    }
   }
 /* Desktop... */
 @media all and (min-width: 1200px) {
@@ -409,12 +517,6 @@
     }
     .category-mens,.category-womens{
         width: 50%;
-    }
-    #mens,#womens {
-        flex: 0 1 50%;
-    }
-    #trends,#glasses,#sale,#bags{
-        flex: 0 1 50%;
     }
     .container{
         max-width: 1240px;
