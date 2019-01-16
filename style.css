@@ -237,9 +237,45 @@
     .newsletter{
         text-align: center;
         background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/wave-bkgd.jpg);
-        background-size: cover,cover;
+        background-size: cover,100% 100%;
         background-repeat:no-repeat, no-repeat;
-     
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px auto;
+    }
+    .newsletter p,.newsletter h2{
+        color: #ffffff;
+    }
+    .text-submit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        background-color: #ffffff;
+        width: 60%;
+        border-radius: 15px;
+        height: 30px;
+    }
+    .text{
+        width: 80%;
+        height: 20px;
+        border-radius: 10px;
+        border: none;
+        margin: auto 10px;
+    }
+    input:focus{
+        border: none;
+    }
+    .submit{
+        width: 20%;
+        height: 20px;
+        border-radius: 10px;
+        margin-right: 5px;
+        background-color: rgb(217,64,60);
+        border: none;
+        color: #ffffff;
     }
     footer{
         background: #242424;
@@ -247,11 +283,12 @@
         height: 500px;
         display: flex;
         flex-flow: column nowrap;
-        text-align: center;
+        justify-content: center;
         align-items: center;
+        text-align: center;
     }
     .footer-child{
-        margin: 40px;
+       
     }
     footer p{
         color: #ffffff;
@@ -396,6 +433,7 @@
     .footer-child{
         display: initial;
         text-align: left;
+        margin: auto 50px;
     }
     .footer-child p{
     line-height: 1.5em;
