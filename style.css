@@ -1,492 +1,596 @@
-/* Mobile */
+/* Reset */
 @media all {
-    /* http://meyerweb.com/eric/tools/css/reset/ 
+  /* http://meyerweb.com/eric/tools/css/reset/ 
     v2.0 | 20110126
     License: none (public domain)
     */
 
-    html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
-    del, dfn, em, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol, ul, li,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td,
-    article, aside, canvas, details, embed, 
-    figure, figcaption, footer, header, hgroup, 
-    menu, nav, output, ruby, section, summary,
-    time, mark, audio, video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-    }
-    /* HTML5 display-role reset for older browsers */
-    article, aside, details, figcaption, figure, 
-    footer, header, hgroup, menu, nav, section {
-        display: block;
-    }
-    body {
-        line-height: 1;
-    }
-    ol, ul {
-        list-style: none;
-    }
-    blockquote, q {
-        quotes: none;
-    }
-    blockquote:before, blockquote:after,
-    q:before, q:after {
-        content: '';
-        content: none;
-    }
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  blockquote,
+  q {
+    quotes: none;
+  }
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: "";
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
 
-
-
-
-
-
-    body{
-        font-family: 'Raleway';
-        font-weight: 300;
-        font-style: normal;
-        font-size: 14px;
-        color: #2d2d2d;
-    }
-    .container{
-        max-width: 1240px;
-        min-width: 400px;
-        margin: 0 auto;
-    }
-    p, section{
-        color:black;
-        font-size: 14px;
-    }
-
-    .site-header{
-        display: flex;
-        flex-flow: row wrap;
-    }
-    .logo{
-       
-        display: flex;
-        align-items: center;
-        justify-items: flex-start;
-        flex: 1 2 50%;
-    }
-    .logo img{
-        width: 50%;
-        padding: 5%;
-    } 
-    .cart{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        flex: 1 2 50%;
-    }
-    .cart img{
-        width: 25%;  
-        padding: 5%;
-    }
-    .main-navigation{
-        width: 100%;
-        display: flex;
-        flex-flow: row;
-        justify-content: space-evenly;
-        margin: auto 2%;
-        padding: 3%;
-        border-top: solid;
-        border-top-color: #d7d7d7;
-        border-width: 2px;
-        text-transform: uppercase;
-    }
-    nav a{
-        text-decoration: none;
-        color: #e2574c;
-        font-weight: 500
-    }
-    nav a:hover{
-        /* text-decoration: underline; */
-        color: #b64036;
-    }
-    .banner p{
-        color: #ffffff;
-        font-size: 14px;
-        font-weight: 500;
-        margin: 4%;
-    }
-    .banner-text{
-        width: 80%;
-        text-align: center;
-    }
-
-    .banner{
-        text-align: center;
-        color: #ffffff;
-        font-size: 20px;
-        background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) ,url("images/banner-girl.png"),url("images/flower-bkgd.jpg"); 
-        background-size: cover,contain,cover;
-        background-repeat:no-repeat,no-repeat, repeat-x;
-        background-position-x: center,center,center;
-        background-position-y: center,6em,center;
-        height: 400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .banner-text h1{
-        font-size:40px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    h1,h2{
-        font-family: 'Playfair Display';
-        font-weight: normal;
-        font-style: normal;
-    }
-    .about{
-       padding: 20px;
-    }
-    .about,.newsletter{
-        text-align: center;
-        margin: 20px auto;
-    }
-    .about p,.newsletter p{
-        margin: auto 5%;
-        line-height: 30px;
-    }
-    h2{
-        margin: 20px auto;
-        font-size: 30px;
-    }
-    em{
-        font-family: 'Playfair Display';
-        font-weight: normal;
-        font-style: italic;
-    }
-    strong{
-        font-family: 'Playfair Display';
-        font-weight: bold;
-        font-style: normal;
-    }
-    .item{
-        color: #ffffff;
-        font-weight: 500;
-        height: 12rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .category-block1, .category-block2 {
-        display: flex;
-        flex-flow: column nowrap;
-        width: 100%;
-    }
-    .category-trends-glasses,.category-sale-bags{
-        display: flex;
-        flex-flow: row nowrap;
-        width: 100%;
-        margin: 3px;
-    }
-    .category-mens,.category-womens{
-        width: 100%;
-        margin: 3px;
-    }
-    .category-trends,.category-sale{
-        margin-right: 6px;
-    }
-    
-    .category-trends,.category-glasses,.category-sale,.category-bags{
-        flex: 0 1 50%;
-    }
-    .category-bags,.category-glasses,.category-mens,.category-sale,.category-trends,.category-womens{
-        background-size: cover,cover;
-        background-repeat:no-repeat, no-repeat;
-        background-position-x: center, center;
-        background-position-y:center, center;
-    }
-    .category-mens{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/mens-category.jpg);
-    }
-    .category-trends{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/trends-category.jpg);
-    }
-    .category-glasses{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/glasses-category.jpg);
-    }
-    .category-sale{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/sale-category.jpg);
-    }
-    .category-bags{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bags-category.jpg);        
-    }
-    .category-womens{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/womens-category.jpg);
-    }
-    .featured{
-        text-align: center;
-    }
-    .newsletter{
-        text-align: center;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/wave-bkgd.jpg);
-        background-size: cover,100% 100%;
-       
-        background-repeat:no-repeat, no-repeat;
-        height: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 10px auto;
-    }
-    .newsletter p,.newsletter h2{
-        color: #ffffff;
-    }
-    .text-submit{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 20px auto;
-        background-color: #ffffff;
-        width: 60%;
-        border-radius: 15px;
-        height: 30px;
-    }
-    .text{
-        width: 80%;
-        height: 20px;
-        border-radius: 10px;
-        border: none;
-        margin: auto 10px;
-    }
-    input:focus{
-        border: none;
-    }
-    .submit{
-        width: 20%;
-        height: 20px;
-        border-radius: 10px;
-        margin-right: 5px;
-        background-color: rgb(217,64,60);
-        border: none;
-        color: #ffffff;
-    }
-    footer{
-        background: #242424;
-        color: #ffffff;
-        height: 300px;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .footer-child{
-       line-height: 20px;
-    }
-    footer p{
-        color: #ffffff;
-        margin: 0px;
-    }
-    footer i{
-        width: 30px;
-    }
-    footer ul{
-        list-style-type: none;
-    }
-    footer li{
-        margin: 5px auto;
-    }
-    .light-grey{
-        color:rgb(132,132,132);
-    }
-    footer p{
-        font-family: 'Playfair Display';
-        font-weight: normal;
-        font-style: normal;
-    }
-    footer a{
-        color: #ffffff;
-    }
-    .footer-child span{
-        display: none;    
-    }
-    .socialmedia{
-        display: flex;
-        flex-direction: row;
-        margin-top: 30px;
-    }
-
+  
 }
 
+/* Mobile */
+body {
+    font-family: "Raleway";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: #2d2d2d;
+  }
+  .container {
+    max-width: 1240px;
+    min-width: 400px;
+    margin: 0 auto;
+  }
+  p,
+  section {
+    color: black;
+    font-size: 14px;
+  }
 
+  .site-header {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    flex: 1 2 50%;
+  }
+  .logo img {
+    width: 50%;
+    padding: 5%;
+  }
+  .cart {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1 2 50%;
+  }
+  .cart img {
+    width: 25%;
+    padding: 5%;
+  }
+  .main-navigation {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin: auto 2%;
+    padding: 3%;
+    border-top: solid;
+    border-top-color: #d7d7d7;
+    border-width: 2px;
+    text-transform: uppercase;
+  }
+  nav a {
+    text-decoration: none;
+    color: #e2574c;
+    font-weight: 500;
+  }
+  nav a:hover {
+    /* text-decoration: underline; */
+    color: #b64036;
+  }
+  .banner p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 4%;
+  }
+  .banner-text {
+    width: 80%;
+    text-align: center;
+  }
 
+  .banner {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("images/banner-girl.png"), url("images/flower-bkgd.jpg");
+    background-size: cover, contain, cover;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-position-x: center, center, center;
+    background-position-y: center, 6em, center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-text h1 {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1,
+  h2 {
+    font-family: "Playfair Display";
+    font-weight: normal;
+    font-style: normal;
+  }
+  .about {
+    padding: 20px;
+  }
+  .about,
+  .newsletter {
+    text-align: center;
+    margin: 20px auto;
+  }
+  .about p,
+  .newsletter p {
+    margin: auto 5%;
+    line-height: 30px;
+  }
+  h2 {
+    margin: 20px auto;
+    font-size: 30px;
+  }
+  em {
+    font-family: "Playfair Display";
+    font-weight: normal;
+    font-style: italic;
+  }
+  strong {
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-style: normal;
+  }
+  .item {
+    color: #ffffff;
+    font-weight: 500;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .category-block1,
+  .category-block2 {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+  }
+  .category-trends-glasses,
+  .category-sale-bags {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin: 3px;
+  }
+  .category-mens,
+  .category-womens {
+    width: 100%;
+    margin: 3px;
+  }
+  .category-trends,
+  .category-sale {
+    margin-right: 6px;
+  }
+
+  .category-trends,
+  .category-glasses,
+  .category-sale,
+  .category-bags {
+    flex: 0 1 50%;
+  }
+  .category-bags,
+  .category-glasses,
+  .category-mens,
+  .category-sale,
+  .category-trends,
+  .category-womens {
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: center, center;
+    background-position-y: center, center;
+  }
+  .category-mens {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(images/mens-category.jpg);
+  }
+  .category-trends {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(images/trends-category.jpg);
+  }
+  .category-glasses {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(images/glasses-category.jpg);
+  }
+  .category-sale {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(images/sale-category.jpg);
+  }
+  .category-bags {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(images/bags-category.jpg);
+  }
+  .category-womens {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(images/womens-category.jpg);
+  }
+  .featured img{
+     
+  }
+  
+  .newsletter {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(images/wave-bkgd.jpg);
+    background-size: cover, 100% 100%;
+
+    background-repeat: no-repeat, no-repeat;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+  }
+  .newsletter p,
+  .newsletter h2 {
+    color: #ffffff;
+  }
+  .text-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #ffffff;
+    width: 60%;
+    border-radius: 15px;
+    height: 30px;
+  }
+  .text {
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    margin: auto 10px;
+  }
+  input:focus {
+    border: none;
+  }
+  .submit {
+    width: 20%;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 5px;
+    background-color: rgb(217, 64, 60);
+    border: none;
+    color: #ffffff;
+  }
+  footer {
+    background: #242424;
+    color: #ffffff;
+    height: 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-child {
+    line-height: 20px;
+  }
+  footer p {
+    color: #ffffff;
+    margin: 0px;
+  }
+  footer i {
+    width: 30px;
+  }
+  footer ul {
+    list-style-type: none;
+  }
+  footer li {
+    margin: 5px auto;
+  }
+  .light-grey {
+    color: rgb(132, 132, 132);
+  }
+  footer p {
+    font-family: "Playfair Display";
+    font-weight: normal;
+    font-style: normal;
+  }
+  footer a {
+    color: #ffffff;
+  }
+  .footer-child span {
+    display: none;
+  }
+  .socialmedia {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+  }
 
 /* Tablet... */
 @media all and (min-width: 600px) {
-    body{
-        font-size: 16px;
-    }
-    p{
-        font-size: 16px;
-    }
-    .site-header{
-        flex-flow: row nowrap;
-        height: 80px;
-    }
-    .logo{
-        order: 0;
-        width: 10%;
-    }
-    .logo img{
-        width: 80%;
-        margin-left: 3%;
-    }
-    .main-navigation{
-        order: 1;
-        width: 80%;
-        border-top: none;
-        justify-content:space-around;
-    }
-    .cart{
-        order:2;
-        width: 10%;
-    }
-    .cart img{
-        width: 40%;
-        margin-right: 4%;
-    }
-    .banner p{
-        font-size: 20px;
-    }
-    .banner-text h1{
-        margin: 15px;
-        font-size: 40px;
-        display: inline;
-    }
-    .banner{
-        height: 400px;
-        background-position-y: center,2rem,center;
-    }
-    
-    h1,h2{
-        font-family: 'Playfair Display';
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-    .about{
-        text-align: center;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        height: 15rem;
-    }
-    .newsletter{
-        height: 20rem;
-    }
-    .about p,.newsletter p{
-        margin: 1rem 8%;
-        line-height: 30px;
-    }
-    h2{
-        margin: 10px auto;
-        font-size: 30px;
-    }
-    .item{
-        height: 10rem;
-        font-size: 25px;
-    }
-    .category-block1, .category-block2 {
-        display: flex;
-        flex-flow: row nowrap;
-        width: 100%;
-    }
-    .category-trends-glasses,.category-sale-bags{
-        width: 50%;
-    }
-    .category-mens,.category-womens{
-        width: 50%;
-    }
-    footer{
-        height: 16rem;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .footer-child span{
-        display: inline;
-    }
-    .footer-child{
-        display: initial;
-        text-align: left;
-        margin: auto 20px;
-    }
-    .footer-child p{
-    line-height: 1.5em;
-    }
-    .footer-child li{
-        margin: 0.8em auto;
-    }
+  body {
+    font-size: 16px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .site-header {
+    flex-flow: row nowrap;
+    height: 80px;
+  }
+  .logo {
+    order: 0;
+    width: 10%;
+  }
+  .logo img {
+    width: 80%;
+    margin-left: 3%;
+  }
+  .main-navigation {
+    order: 1;
+    width: 80%;
+    border-top: none;
+    justify-content: space-around;
+  }
+  .cart {
+    order: 2;
+    width: 10%;
+  }
+  .cart img {
+    width: 40%;
+    margin-right: 4%;
+  }
+  .banner p {
+    font-size: 20px;
+  }
+  .banner-text h1 {
+    margin: 15px;
+    font-size: 40px;
+    display: inline;
+  }
+  .banner {
+    height: 400px;
+    background-position-y: center, 2rem, center;
   }
 
+  h1,
+  h2 {
+    font-family: "Playfair Display";
+    font-weight: normal;
+    font-style: normal;
+  }
 
+  .about {
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+  }
+  .newsletter {
+    height: 20rem;
+  }
+  .about p,
+  .newsletter p {
+    margin: 1rem 8%;
+    line-height: 30px;
+  }
+  h2 {
+    margin: 10px auto;
+    font-size: 30px;
+  }
+  .item {
+    height: 10rem;
+    font-size: 25px;
+  }
+  .category-block1,
+  .category-block2 {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+  }
+  .category-trends-glasses,
+  .category-sale-bags {
+    width: 50%;
+  }
+  .category-mens,
+  .category-womens {
+    width: 50%;
+  }
+  footer {
+    height: 16rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-child span {
+    display: inline;
+  }
+  .footer-child {
+    display: initial;
+    text-align: left;
+    margin: auto 20px;
+  }
+  .footer-child p {
+    line-height: 1.5em;
+  }
+  .footer-child li {
+    margin: 0.8em auto;
+  }
+}
 
 /* Desktop... */
 @media all and (min-width: 1000px) {
-    .site-header{
-        height: 15%;
-    }
-    .logo{
-        width: 30%;
-        margin-left: 4%;
-    }
-    .logo img{
-        width: 48%;
-        padding: 0;
-    } 
-    .main-navigation{
-        width: 40%;
-    }
-    .cart{
-        width: 30%;
-    }
-    .cart img{
-        width: 20%;
-        margin-right: 8%;
-    }
-    .banner p{
-        font-size: 18px;
-    }
-    .banner-text h1{
-        font-size: 60px;
-    }
-    .banner{
-        height: 30rem;
-    }
-    .about,.newsletter{
-        text-align: center;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        height: 15rem;
-    }
-    .about p,.newsletter p{
-        margin: 1rem 20%;
-    }
-    .footer-child{
-        margin: auto 50px;
-    }
+  .site-header {
+    height: 15%;
+  }
+  .logo {
+    width: 30%;
+    margin-left: 4%;
+  }
+  .logo img {
+    width: 48%;
+    padding: 0;
+  }
+  .main-navigation {
+    width: 40%;
+  }
+  .cart {
+    width: 30%;
+  }
+  .cart img {
+    width: 20%;
+    margin-right: 8%;
+  }
+  .banner p {
+    font-size: 18px;
+  }
+  .banner-text h1 {
+    font-size: 60px;
+  }
+  .banner {
+    height: 30rem;
+  }
+  .about,
+  .newsletter {
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+  }
+  .about p,
+  .newsletter p {
+    margin: 1rem 20%;
+  }
+  .footer-child {
+    margin: auto 50px;
+  }
 }
