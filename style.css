@@ -240,6 +240,7 @@
         text-align: center;
         background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/wave-bkgd.jpg);
         background-size: cover,100% 100%;
+       
         background-repeat:no-repeat, no-repeat;
         height: 300px;
         display: flex;
