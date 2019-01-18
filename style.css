@@ -349,6 +349,9 @@ strong {
   width: 300px;
   text-align: center;
 }
+.featured br{
+    display: none;
+}
 .carousel-cell {
     width: 100%;
   }
@@ -552,6 +555,15 @@ footer a {
   .category-womens {
     width: 50%;
   }
+  .carousel-cell {
+    width: 50%;
+  }
+  .featured br{
+    display: block;
+}
+.product-tag {
+    font-size: 13px;
+  }
   footer {
     height: 16rem;
     display: flex;
@@ -620,6 +632,18 @@ footer a {
   .newsletter p {
     margin: 1rem 20%;
   }
+  .carousel-cell {
+    width: 25%;
+  }
+  .featured br{
+    display: none;
+}
+.price,.product-tag{
+    font-weight: 400;
+}
+.featured-products-item img{
+    width: 80%;
+}
   .footer-child {
     margin: auto 50px;
   }
