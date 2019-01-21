@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset CSS */
 @media all {
   /* http://meyerweb.com/eric/tools/css/reset/ 
     v2.0 | 20110126
@@ -131,7 +131,7 @@
   }
 }
 
-/* Mobile */
+/* For Mobile Size */
 body {
   font-family: "Raleway";
   font-weight: 300;
@@ -150,6 +150,7 @@ section {
   font-size: 14px;
 }
 
+/* header */
 .site-header {
   display: flex;
   flex-flow: row wrap;
@@ -195,6 +196,8 @@ nav a:hover {
   /* text-decoration: underline; */
   color: #b64036;
 }
+
+/* banner */
 .banner p {
   color: #ffffff;
   font-size: 18px;
@@ -233,10 +236,14 @@ h2 {
   font-weight: normal;
   font-style: normal;
 }
-.banner-text, .products, .newsletter h2{
-    text-shadow: 2px 2px 4px #0000003f;
-/* text-shadow:  h-shadow v-shadow blur-radius color */
+.banner-text,
+.products,
+.newsletter h2 {
+  text-shadow: 2px 2px 4px #0000003f;
+  /* text-shadow:  h-shadow v-shadow blur-radius color */
 }
+
+/* about */
 .about {
   padding: 20px auto;
 }
@@ -250,8 +257,8 @@ h2 {
   margin: auto 15px;
   line-height: 30px;
 }
-.newsletter p{
-    margin: auto 3px;
+.newsletter p {
+  margin: auto 3px;
 }
 h2 {
   margin: 20px auto;
@@ -267,6 +274,8 @@ strong {
   font-weight: bold;
   font-style: normal;
 }
+
+/* products */
 .item {
   color: #ffffff;
   font-size: 25px;
@@ -275,10 +284,9 @@ strong {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
-.item :hover{
-    color: yellow;
+.item :hover {
+  color: yellow;
 }
 .category-block1,
 .category-block2 {
@@ -301,14 +309,17 @@ strong {
 .category-womens {
   width: 100%;
 }
-.category-mens,.category-womens,.category-trends-glasses,.category-sale-bags{
-    margin: 4px 0px;
+.category-mens,
+.category-womens,
+.category-trends-glasses,
+.category-sale-bags {
+  margin: 4px 0px;
 }
 .category-trends,
 .category-glasses,
 .category-sale,
 .category-bags {
-  flex: 2  50%;
+  flex: 2 50%;
 }
 .category-bags,
 .category-glasses,
@@ -345,14 +356,16 @@ strong {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(images/womens-category.jpg);
 }
+
+/* featured (flickity) */
 .featured {
-    width: 100%;
+  width: 100%;
   padding: 60px auto;
   text-align: center;
   margin: 60px auto;
 }
-.featured-title{
-    margin-bottom: 70px;
+.featured-title {
+  margin-bottom: 70px;
 }
 .featured-products-container {
   width: 100%;
@@ -362,12 +375,12 @@ strong {
   width: 300px;
   text-align: center;
 }
-.featured br{
-    display: none;
+.featured br {
+  display: none;
 }
 .carousel-cell {
-    width: 100%;
-  }
+  width: 100%;
+}
 .product-name {
   color: #e2574c;
   font-family: "Playfair Display";
@@ -380,13 +393,15 @@ strong {
   text-transform: uppercase;
   font-size: 11px;
 }
-.price,.product-tag{
-    font-weight: 400;
+.price,
+.product-tag {
+  font-weight: 400;
 }
-.carousel-cell-text{
-    padding-bottom: 50px;
+.carousel-cell-text {
+  padding-bottom: 50px;
 }
 
+/* newsletter */
 .newsletter {
   text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -416,7 +431,7 @@ strong {
   font-weight: normal;
 }
 .text {
-    font-size: 16px;
+  font-size: 16px;
   width: 70%;
   height: 20px;
   border-radius: 10px;
@@ -428,7 +443,7 @@ input:focus {
   border: none;
 }
 .submit {
-    font-size: 16px;
+  font-size: 16px;
   width: 35%;
   height: 30px;
   border-radius: 15px;
@@ -437,6 +452,8 @@ input:focus {
   border: none;
   color: #ffffff;
 }
+
+/* footer part */
 footer {
   background: #242424;
   color: #ffffff;
@@ -483,13 +500,7 @@ footer a {
   margin-top: 30px;
 }
 
-
-
-
-
-
-
-/* Tablet... */
+/* For Tablet Size... */
 @media all and (min-width: 600px) {
   body {
     font-size: 16px;
@@ -533,7 +544,7 @@ footer a {
   }
   .banner {
     height: 400px;
-    background-size: cover, auto 366px,cover;
+    background-size: cover, auto 366px, cover;
     background-position-y: center, 69px, center;
   }
 
@@ -558,9 +569,9 @@ footer a {
     line-height: 30px;
     font-size: 18px;
   }
-  .about p{
-      margin: 0px 15px;
-      margin-top: 15px;
+  .about p {
+    margin: 0px 15px;
+    margin-top: 15px;
   }
   h2 {
     margin: 10px auto;
@@ -584,45 +595,46 @@ footer a {
   .category-womens {
     width: 50%;
   }
-  .category-mens,.category-sale-bags{
-      margin-right: 8px;
+  .category-mens,
+  .category-sale-bags {
+    margin-right: 8px;
   }
   .carousel-cell {
     width: 50%;
   }
-  .featured br{
+  .featured br {
     display: block;
-}
-.product-tag {
+  }
+  .product-tag {
     font-size: 13px;
   }
-  .product-name{
-      margin: 25px auto;
+  .product-name {
+    margin: 25px auto;
   }
   .featured-products-item img {
     width: 80%;
   }
-  .carousel-cell-text{
-      padding-top: 20px;
+  .carousel-cell-text {
+    padding-top: 20px;
     padding-bottom: 45px;
-}
- .newsletter{
-     height: 380px;
-     background-size: cover, 240% 230%;
- }
- .newsletter p{
-     margin: 30px 20px;
- }
- .text-submit{
-     height: 50px;
-     border-radius: 25px;
-     width: 65%;
- }
- .submit{
-     margin-right: 5px;
-     height: 40px;
-     border-radius: 20px;
- }
+  }
+  .newsletter {
+    height: 380px;
+    background-size: cover, 240% 230%;
+  }
+  .newsletter p {
+    margin: 30px 20px;
+  }
+  .text-submit {
+    height: 50px;
+    border-radius: 25px;
+    width: 65%;
+  }
+  .submit {
+    margin-right: 5px;
+    height: 40px;
+    border-radius: 20px;
+  }
   footer {
     height: 290px;
     display: flex;
@@ -638,8 +650,8 @@ footer a {
     text-align: left;
     margin: auto 15px;
   }
-  .socialmedia{
-      margin-right: 40px;
+  .socialmedia {
+    margin-right: 40px;
   }
   .footer-child p {
     line-height: 1.5em;
@@ -649,12 +661,7 @@ footer a {
   }
 }
 
-
-
-
-
-
-/* Desktop... */
+/* For Desktop Size... */
 @media all and (min-width: 1000px) {
   .site-header {
     height: 15%;
@@ -684,11 +691,10 @@ footer a {
     font-size: 60px;
   }
   .banner {
-    background-size: cover,auto 585px, contain;
+    background-size: cover, auto 585px, contain;
     background-position-y: center, 5vw, center;
     height: 33rem;
   }
-  
   .about,
   .newsletter {
     text-align: center;
@@ -698,40 +704,40 @@ footer a {
     align-items: center;
     height: 15rem;
   }
-  .about{
+  .about {
     height: 12rem;
-}
+  }
   .about p,
   .newsletter p {
     margin: 1rem 23%;
   }
-  .item{
-      height: 25vw;
-      font-size: 38px;
+  .item {
+    height: 25vw;
+    font-size: 38px;
   }
   .carousel-cell {
     width: 25%;
   }
-  .featured br{
+  .featured br {
     display: none;
-}
-.featured-products-item img{
+  }
+  .featured-products-item img {
     width: 80%;
-}
-.newsletter{
+  }
+  .newsletter {
     height: 340px;
     background-size: cover, 113% 255%;
-}
-.newsletter p {
+  }
+  .newsletter p {
     margin: 2rem 23%;
   }
-.text-submit{ 
+  .text-submit {
     width: 35%;
-}
-.footer-left{
+  }
+  .footer-left {
     margin: auto 45px;
-}
-.socialmedia {
+  }
+  .socialmedia {
     margin: auto 100px;
   }
 }
