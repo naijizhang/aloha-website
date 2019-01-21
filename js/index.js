@@ -16,6 +16,7 @@ $(".main-carousel").flickity({
   contain: true,
   imagesLoaded: true,
   prevNextButtons: false,
+  autoPlay: true,
 });
 
 // reference: https://stackoverflow.com/questions/2507030/email-validation-using-jquery
