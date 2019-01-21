@@ -233,6 +233,10 @@ h2 {
   font-weight: normal;
   font-style: normal;
 }
+.banner-text, .products, .newsletter h2{
+    text-shadow: 2px 2px 4px #0000003f;
+/* text-shadow:  h-shadow v-shadow blur-radius color */
+}
 .about {
   padding: 20px auto;
 }
