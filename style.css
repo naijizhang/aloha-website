@@ -652,10 +652,10 @@ footer a {
   }
   .logo {
     width: 30%;
-    margin-left: 4%;
+    padding-left: 3%;
   }
   .logo img {
-    width: 48%;
+    width: 46%;
     padding: 0;
   }
   .main-navigation {
@@ -665,18 +665,21 @@ footer a {
     width: 30%;
   }
   .cart img {
-    width: 20%;
-    margin-right: 8%;
+    width: 18%;
+    margin-right: 7%;
   }
   .banner p {
-    font-size: 18px;
+    font-size: 18x;
   }
   .banner-text h1 {
     font-size: 60px;
   }
   .banner {
-    height: 30rem;
+    background-size: cover, 19%, 70%;
+    background-position-y: center, 3em, center;
+    height: 33rem;
   }
+  
   .about,
   .newsletter {
     text-align: center;
@@ -686,9 +689,16 @@ footer a {
     align-items: center;
     height: 15rem;
   }
+  .about{
+    height: 12rem;
+}
   .about p,
   .newsletter p {
-    margin: 1rem 20%;
+    margin: 1rem 23%;
+  }
+  .item{
+      height: 19rem;
+      font-size: 38px;
   }
   .carousel-cell {
     width: 25%;
@@ -699,7 +709,20 @@ footer a {
 .featured-products-item img{
     width: 80%;
 }
-  .footer-child {
-    margin: auto 50px;
+.newsletter{
+    height: 340px;
+    background-size: cover, 113% 255%;
+}
+.newsletter p {
+    margin: 2rem 23%;
+  }
+.text-submit{ 
+    width: 35%;
+}
+.footer-left{
+    margin: auto 45px;
+}
+.socialmedia {
+    margin: auto 100px;
   }
 }
