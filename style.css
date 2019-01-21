@@ -212,10 +212,10 @@ nav a:hover {
   font-size: 20px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("images/banner-girl.png"), url("images/flower-bkgd.jpg");
-  background-size: cover, 38%, cover;
-  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-size: cover, auto 369px, cover;
+  background-repeat: no-repeat, no-repeat, repeat;
   background-position-x: center, center, center;
-  background-position-y: center, 3em, center;
+  background-position-y: center, 63px, center;
   height: 400px;
   display: flex;
   justify-content: center;
@@ -271,16 +271,18 @@ strong {
   color: #ffffff;
   font-size: 25px;
   font-weight: 500;
-  height: 12rem;
+  height: 48vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .category-block1,
 .category-block2 {
   display: flex;
   flex-flow: column nowrap;
-  width: 100%;
+  flex: 2 0 100%;
+  /* width: 100%; */
 }
 .category-trends-glasses,
 .category-sale-bags {
@@ -303,7 +305,7 @@ strong {
 .category-glasses,
 .category-sale,
 .category-bags {
-  flex: 0 1 50%;
+  flex: 2  50%;
 }
 .category-bags,
 .category-glasses,
@@ -528,8 +530,8 @@ footer a {
   }
   .banner {
     height: 400px;
-    background-size: cover, 24%, cover;
-    background-position-y: center, 75px, center;
+    background-size: cover, auto 366px,cover;
+    background-position-y: center, 69px, center;
   }
 
   h1,
@@ -562,7 +564,7 @@ footer a {
     font-size: 38px;
   }
   .item {
-    height: 9rem;
+    height: 25vw;
     font-size: 25px;
   }
   .category-block1,
@@ -679,8 +681,8 @@ footer a {
     font-size: 60px;
   }
   .banner {
-    background-size: cover, 19%, 70%;
-    background-position-y: center, 3em, center;
+    background-size: cover,auto 585px, contain;
+    background-position-y: center, 5vw, center;
     height: 33rem;
   }
   
@@ -701,7 +703,7 @@ footer a {
     margin: 1rem 23%;
   }
   .item{
-      height: 19rem;
+      height: 25vw;
       font-size: 38px;
   }
   .carousel-cell {
