@@ -277,6 +277,9 @@ strong {
   align-items: center;
   
 }
+.item :hover{
+    color: yellow;
+}
 .category-block1,
 .category-block2 {
   display: flex;
