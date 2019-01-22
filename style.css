@@ -280,20 +280,27 @@ strong {
   color: #ffffff;
   font-size: 25px;
   font-weight: 500;
-  height: 48vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 4px 0px;
 }
 .item :hover {
   color: yellow;
 }
-.category-block1,
-.category-block2 {
-  display: flex;
-  flex-flow: column nowrap;
-  flex: 2 0 100%;
-  /* width: 100%; */
+.category-mens,
+.category-womens {
+  width: 100%;
+}
+.retio2_1:before{
+    content: "";
+	display: block;
+	padding-top: 50%;
+}
+.retio1_1:before{
+    content: "";
+	display: block;
+    padding-top: 100%;
 }
 .category-trends-glasses,
 .category-sale-bags {
@@ -305,16 +312,8 @@ strong {
 .category-sale {
   margin-right: 8px;
 }
-.category-mens,
-.category-womens {
-  width: 100%;
-}
-.category-mens,
-.category-womens,
-.category-trends-glasses,
-.category-sale-bags {
-  margin: 4px 0px;
-}
+
+
 .category-trends,
 .category-glasses,
 .category-sale,
@@ -500,6 +499,11 @@ footer a {
   margin-top: 30px;
 }
 
+
+
+
+
+
 /* For Tablet Size... */
 @media all and (min-width: 600px) {
   body {
@@ -577,27 +581,34 @@ footer a {
     margin: 10px auto;
     font-size: 38px;
   }
+  .products{
+      display: flex;
+      flex-flow: row wrap;
+  }
   .item {
-    height: 25vw;
     font-size: 25px;
+    margin: 0px;
   }
-  .category-block1,
-  .category-block2 {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100%;
-  }
+  .category-mens,
+  .category-womens,
   .category-trends-glasses,
   .category-sale-bags {
-    width: 50%;
+    width: 49.4%;
+    margin: 0.6% 0%;
   }
-  .category-mens,
-  .category-womens {
-    width: 50%;
+  .category-womens,
+  .category-trends-glasses{
+      margin-left: 0.6%;
   }
   .category-mens,
   .category-sale-bags {
-    margin-right: 8px;
+    margin-right: 0.6%;
+  }
+  .category-sale,.category-trends{
+    margin-right: 1.2%;
+  }
+  .category-glasses,.category-bags{
+    margin-left: 1.2%;
   }
   .carousel-cell {
     width: 50%;
@@ -661,6 +672,11 @@ footer a {
   }
 }
 
+
+
+
+
+
 /* For Desktop Size... */
 @media all and (min-width: 1000px) {
   .site-header {
@@ -712,8 +728,28 @@ footer a {
     margin: 1rem 23%;
   }
   .item {
-    height: 25vw;
     font-size: 38px;
+  }
+  .category-mens,
+  .category-womens,
+  .category-trends-glasses,
+  .category-sale-bags {
+    width: 49.7%;
+    margin: 0.3% 0%;
+  }
+  .category-womens,
+  .category-trends-glasses{
+      margin-left: 0.3%;
+  }
+  .category-mens,
+  .category-sale-bags {
+    margin-right: 0.3%;
+  }
+  .category-sale,.category-trends{
+    margin-right: 0.6%;
+  }
+  .category-glasses,.category-bags{
+    margin-left: 0.6%;
   }
   .carousel-cell {
     width: 25%;
