@@ -130,7 +130,29 @@
     border-spacing: 0;
   }
 }
-
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  color: #ffffff;
+  background-color: red;
+  border-radius: 10px;
+  padding: 10px;
+  opacity: 0.7;
+}
+.screen-reader-text:focus {
+  clip: auto !important;
+  display: block;
+  height: auto;
+  left: 5px;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* above all content */
+  outline: 0;
+  text-decoration: none;
+}
 /* For Mobile Size */
 body {
   font-family: "Raleway";
